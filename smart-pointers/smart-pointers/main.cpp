@@ -13,10 +13,20 @@ public:
 };
 
 // Function prototypes
-std::unique_ptr<std::vector<std::shared_ptr<Test>>> make();
+auto make();
 void fill(std::vector<std::shared_ptr<Test>>& vec, int num);
 void display(const std::vector<std::shared_ptr<Test>>& vec);
 
+//defined functions
+auto make() {
+    return std::make_unique<std::vector<std::shared_ptr<Test>>>;
+}
+
+void fill(std::vector<std::shared_ptr<Test>>& vec, int num) {
+
+}
+
+// main funciton
 int main() {
     std::unique_ptr<std::vector<std::shared_ptr<Test>>> vec_ptr;
     vec_ptr = make();
