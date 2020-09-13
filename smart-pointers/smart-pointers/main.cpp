@@ -19,13 +19,13 @@ void display(const std::vector<std::shared_ptr<Test>>& vec);
 
 //defined functions
 auto make() {
-    return std::make_unique<std::vector<std::shared_ptr<Test>>>;
+    return std::make_unique<std::vector<std::shared_ptr<Test>>>();
 }
 
 void fill(std::vector<std::shared_ptr<Test>>& vec, int num) {
     int temp;
     for (int i = 1; i <= num; ++i) {
-        std::cout << "Enter data point [ " << i << " ]";
+        std::cout << "Enter data point [" << i << "] : ";
         std::cin >> temp;
 
         vec.push_back(std::make_shared<Test>(temp));
@@ -40,7 +40,7 @@ void display(const std::vector<std::shared_ptr<Test>>& vec) {
     std::cout << "====================================" << std::endl;
 }
 
-// main funciton
+// main function
 int main() {
     std::unique_ptr<std::vector<std::shared_ptr<Test>>> vec_ptr;
     vec_ptr = make();
