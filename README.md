@@ -1,7 +1,7 @@
 ![made-with-VisualStudio](https://img.shields.io/badge/Made%20With-Visual%20Studio-ba88f3)  ![Using-CPlusPlus](https://img.shields.io/badge/Using-C%2B%2B-ff69b4)
 
 # Playing-With-Smart-Pointers
-...
+A very simple app using smart-pointers and vectors. Uses unique_ptr, make_unique, and shared_ptr.
 
 <img src="./assets/screenshot.png"
      alt="Img"
