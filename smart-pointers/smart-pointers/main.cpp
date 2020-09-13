@@ -33,7 +33,11 @@ void fill(std::vector<std::shared_ptr<Test>>& vec, int num) {
 }
 
 void display(const std::vector<std::shared_ptr<Test>>& vec) {
-    std::cout << 
+    std::cout << "\n====== Displaying Vector Data ======" << std::endl;
+    for (const auto& ptr : vec) {
+        std::cout << ptr->get_data() << std::endl;
+    }
+    std::cout << "====================================" << std::endl;
 }
 
 // main funciton
