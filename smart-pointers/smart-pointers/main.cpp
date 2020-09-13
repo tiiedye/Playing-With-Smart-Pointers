@@ -25,7 +25,7 @@ auto make() {
 void fill(std::vector<std::shared_ptr<Test>>& vec, int num) {
     int temp;
     for (int i = 1; i <= num; ++i) {
-        std::cout << "Enter data point [" << i << "] : ";
+        std::cout << "Enter data point [ " << i << " ] : ";
         std::cin >> temp;
 
         vec.push_back(std::make_shared<Test>(temp));
